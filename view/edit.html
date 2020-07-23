@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+
+<head>
+<meta charset="utf-8">
+<title>学生信息管理系统</title>
+<script src="view/jquery-3.4.1.js"></script>
+<script src="view/jqajax.js"></script>
+<link rel="stylesheet" href="view/style.css">
+<style>
+.row1 {
+	width: 100%;
+	line-height: 30px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-color: #C0DCC0;
+}
+.row2{
+	width: 100%;
+}
+ul {
+	list-style: none;
+	padding-left: 30%;
+}
+li {
+	list-style: none;
+	text-align: center;
+	line-height: 20px;
+	border-bottom: 1px solid;
+	border: 1px solid #d8c7a0;
+}
+.sty {
+	width: 10%;
+	height: 30px;
+}
+table {
+	width: 80%;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<form id="form1" onsubmit="return false" method="post">
+<div id="header">
+  <h1>学生信息管理系统</h1>
+</div>
+<div id="nav"> 
+<a href="/login">主页</a> 
+<a href="/edit">学生信息管理</a> 
+<a href="/edit">学生成绩管理</a> 
+</div>
+<div id="content">
+  <div class="row1">
+    <ul>
+      <li>
+		  学号:
+		  <input type="text" name="id" id="id">
+          姓名:
+		  <input type="text" name="name" id="name">
+      </li>
+      <li>
+		  专业:
+		  <input type="text" name="major" id="major">
+          成绩:
+		  <input type="text" name="socre" id="socre">
+      </li>
+      <li>
+		  日期:
+		  <input type="text" name="birthday" id="birthday">
+          性别:
+		  <input type="text" name="sex" id="sex">
+      </li>
+    </ul>
+    <ul>
+		<li>
+        <input  class="sty" type="submit" name="change" id="change" value="查询">
+        <input  class="sty" type="submit" name="change" id="change" value="排序">
+        <input  class="sty" type="submit" name="change" id="change" value="显示列表">
+		</li>
+      <li>
+        <input  class="sty" type="submit" name="change" id="change" value="删除">
+        <input  class="sty" type="submit" name="change" id="change" value="添加">
+        <input  class="sty" type="submit" name="change" id="change" value="更新">
+      </li>
+    </ul>
+  </div>
+  <div class="row2">
+    <table id="tab" border="1" cellspacing="0" cellpadding="0">
+    </table>
+  </div>
+</div>
+<div id="footer">
+  <p>学生信息管理系统</p>
+</div>
+</form>
+</body>
+</html>
